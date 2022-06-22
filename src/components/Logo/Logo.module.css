@@ -1,0 +1,18 @@
+.Logo {
+    padding: 10px;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.logoImage {
+    height: 100%;
+}
+
+.logoText{
+    position:absolute;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    display: inline;
+    margin-left: 2%;
+}

@@ -1,9 +1,11 @@
 import React from 'react';
 
-const List = () => {
+const List = (props) => {
   return (
     <>
-      <h2>list component</h2>
+      {props.people.map(person => {
+        <article key={person.id} ></article>
+      })}
     </>
   );
 };
