@@ -1,11 +1,10 @@
 import {Link} from 'react-router-dom'
 import cssClasses from './MainNavigation.module.css';
 import Logo from '../../Logo/Logo';
-function MainNavigation () {
+function MainNavigation (props) {
     return (
         <header className={cssClasses.header}>
             <Logo />
-            
             <nav>
                 <ul>
                     <li>
@@ -14,7 +13,12 @@ function MainNavigation () {
                     <li>
                         <Link to="/new">Add New Birthday</Link>
                     </li>
-                
+                    <li>
+                        <Link to="/wishes">
+                            Wishes
+                        <span className={cssClasses.badge}>{props.todayWishes}</span>
+                        </Link>
+                    </li>
                 </ul>
             </nav>
         </header>

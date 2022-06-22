@@ -1,18 +1,31 @@
 import React from 'react';
-import {Route, Switch} from 'react-router-dom';
+import {Redirect, Route, Switch} from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import NewBirthday from './Pages/NewBirthday';
-import Birthdays from './Pages/Birthdays';
+import AllBirthdays from './Pages/AllBirthdays';
+import Today from './Pages/Today';
+import {useState} from 'react';
 function App() {
+
+  const [wishes, setWishes] = useState([]);
+  
+  function updateWishes(todayWishes) {
+    setWishes(todayWishes);
+  }
+
   return (
-    <Layout>
+    <Layout wishes={wishes.length}>
       <Switch>
         <Route exact path='/'>
-          <Birthdays />
+          <AllBirthdays setWishHandler={updateWishes}/>
         </Route>
         <Route path='/new'>
           <NewBirthday />
         </Route>
+        <Route path='/wishes'>
+          <Today wishes={wishes}/>
+        </Route>
+        <Redirect to="/" />
       </Switch>
     </Layout>
   );

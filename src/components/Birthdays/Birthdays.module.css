@@ -1,0 +1,25 @@
+.Birthdays{
+  width: 90%;
+  margin: 5rem auto;
+  max-width: 100%;
+  background: #fff;
+  border-radius: .25rem;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,.4);
+}
+
+.Birthdays h3 {
+  font-weight: 400;
+  text-transform: none;
+  margin-bottom: 2rem;
+}
+
+.Birthday button{
+  width: 23rem;
+  height: 2.5rem;
+  color: white;
+  background-color: #f28ab2;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+}

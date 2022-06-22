@@ -1,0 +1,33 @@
+.Birthday{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: .75rem;
+    column-gap: .75rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    width: 80%;
+  }
+
+.Birthday img{
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+}
+
+.Birthday h4 {
+    margin-bottom: .35rem;
+    margin-left: 1rem;
+}
+
+.Birthday p{
+    font-size: 14px;
+    margin-bottom: 0;
+    margin-left: 1rem;
+}
+
+p{
+  font-size: 14px;
+  margin-bottom: 0;
+}
