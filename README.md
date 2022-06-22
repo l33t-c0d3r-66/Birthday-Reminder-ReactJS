@@ -1,5 +1,5 @@
 # Birthday Reminder ReactJS
-<li> This is a web application created using React.
+<li> This is a web application created using React and Firbase
 <li> An Example of Passing Data from Child to Parent is implemented.
 <li> This Project uses useState, useHistory, and useEffect Hooks
   
